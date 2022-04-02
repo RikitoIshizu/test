@@ -6,7 +6,7 @@ type MetaProps = {
 	description: string
 }
 
-const Meta = (props: MetaProps ) => {
+const Meta = (props: MetaProps) => {
 	return (
 		<Head>
 			<title>{props.title}</title>
