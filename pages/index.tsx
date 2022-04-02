@@ -2,24 +2,24 @@ import React from "react"
 import type { NextPage } from 'next'
 import styles from '/styles/Home.module.css'
 
-// import Meta from '../components/atoms/Meta'
+import Meta from '../components/atoms/Meta'
 
 import Footer from '../components/organisms/Footer'
 
-// type MetaProps = {
-// 	title: string
-// 	description: string
-// }
+interface MetaProps {
+  title: string
+  description: string
+}
 
 const Home: NextPage = () => {
-  // const propType : MetaProps = {
-  //   title: 'Indexページ',
-  //   description: 'ここはIndexページ'
-  // }
+  const propType: MetaProps = {
+    title: 'Indexページ',
+    description: 'ここはIndexページ'
+  }
 
   return (
     <div className={styles.container}>
-      {/* <Meta props={propType} /> */}
+      <Meta metaPropData={propType} />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
